@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protocolo BB84</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Qubits</h1>
+  <h2>López Ibarra Carlos Alberto</h2>
+  <div class="main-container">
+    <label for="input-value">
+      Numero de bits para generar:
+    </label>
+    <br>
+    <input id="input-value" type="number" id="longitud" min="0" pattern="[0-9]">
+    <br>
+    <label>
+      <input type="checkbox" id="checkbox-eva">
+      Incluir Eva
+    </label>
+    <br>
+    <button onclick="generateTable()">Generar nueva tabla</button>
+    <br>
+    <button onclick="window.location.reload()">Reiniciar</button>
+    <div class="tables-container"></div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
